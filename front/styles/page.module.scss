@@ -1,0 +1,38 @@
+.ptag{
+  font-size: 150%;
+}
+.whitespace{
+  white-space:pre-wrap;
+  word-wrap: break-word;
+}
+.form{
+  display: flex;
+  flex-flow: column;
+  font-size: 150%;
+  margin-left: 36px;
+}
+.title{
+  width: 300px;
+}
+.textarea{
+  width: 300px;
+  height: 300px;
+}
+.margin{
+  margin-left: 36px;
+}
+.margintop{
+  margin-top: 18px;
+}
+.right{
+  text-align: right;
+}
+.marginleft{
+  margin-left: 36px;
+}
+.center{
+  text-align: center;
+}
+.gray{
+  background-color: #C0C0C0;
+}
