@@ -25,7 +25,7 @@ async function getImagesData(path_id:string) {
 
 export default function WorkPages() {
   const pathname = usePathname();
-  const path_id = pathname.split("/")[2];
+  const path_id = pathname.split("/")[5];
   const [url, setUrl] = useState([]);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
