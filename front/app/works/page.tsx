@@ -21,7 +21,7 @@ type Data = {
 //  return {props: {data}};
 //}
 
-export async function getData() {
+async function getData() {
   const res = await fetch("http://localhost:4000/api/v1/posts");
   const data = await res.json();
   return data;
