@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "@/styles/page.module.scss";
 
-export type Data = {
+type Data = {
   image: string;
   id: string;
   title: string;
@@ -14,7 +14,7 @@ export type Data = {
   updated_at: string;
 };
 
-export async function getImagesData(path_id:string) {
+async function getImagesData(path_id:string) {
   const res = await fetch(`http://localhost:4000/api/v1/posts/${path_id}`);
   const data = await res.json();
   const dataurl = data.images_url;
