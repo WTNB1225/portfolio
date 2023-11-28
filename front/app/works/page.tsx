@@ -46,7 +46,6 @@ export default function Works() {
     <div>
       
       {posts.map((post) => {
-        console.log(posts)
         const imageUrl = post.images_url[0]
         console.log(imageUrl)
         return(
