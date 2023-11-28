@@ -22,7 +22,7 @@ type Data = {
 //}
 
 async function getData() {
-  const res = await fetch("http://localhost:4000/api/v1/posts");
+  const res = await fetch("https://wtnbjp-portfolio.onrender.com/api/v1/posts");
   const data = await res.json();
   return data;
 }

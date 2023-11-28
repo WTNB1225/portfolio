@@ -15,7 +15,7 @@ type Data = {
 };
 
 async function getImagesData(path_id:string) {
-  const res = await fetch(`http://localhost:4000/api/v1/posts/${path_id}`);
+  const res = await fetch(`https://wtnbjp-portfolio.onrender.com/api/v1/posts/${path_id}`);
   const data = await res.json();
   const dataurl = data.images_url;
   const title = data.title;

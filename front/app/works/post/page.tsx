@@ -38,7 +38,7 @@ export default function CreatePost() {
     });
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/posts",
+        "https://wtnbjp-portfolio.onrender.com/api/v1/posts",
         formData,
         {
           headers: {

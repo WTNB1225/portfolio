@@ -6,14 +6,14 @@ import { notFound } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { useState, useEffect, ChangeEvent, FormEvent } from "react";
 const fetchData = async () => {
-  const res = await fetch("http://localhost:4000/api/v1/posts");
+  const res = await fetch("https://wtnbjp-portfolio.onrender.com/api/v1/posts");
   const posts = await res.json();
   return posts;
 };
 
 const destroy = async (id: string) => {
   try {
-    const response = axios.delete(`http://localhost:4000/api/v1/posts/${id}`);
+    const response = axios.delete(`https://wtnbjp-portfolio.onrender.com/api/v1/posts/${id}`);
   } catch (e) {
     console.log(e);
   }
@@ -92,7 +92,7 @@ export default function Admin() {
       if (response.status == 201) {
         try {
           const res = await axios.patch(
-            `http://localhost:4000/api/v1/posts/${id}`,
+            `https://wtnbjp-portfolio.onrender.com/api/v1/posts/${id}`,
             formEdit,
             {
               headers: {
@@ -119,7 +119,7 @@ export default function Admin() {
     formData.append("password", password);
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/login",
+        "https://wtnbjp-portfolio.onrender.com/api/v1/login",
         formData,
         {
           headers: {
