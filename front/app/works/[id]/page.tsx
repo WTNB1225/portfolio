@@ -25,15 +25,14 @@ async function getImagesData(path_id:string) {
 
 export default function WorkPages() {
   const pathname = usePathname();
-  const path_id = pathname.split("/")[5];
-  const [url, setUrl] = useState([]);
+  const path_id = pathname.split("/")[2];
+  const [url, setUrl] = useState<string[]>([]);
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   useEffect(() => {
     getImagesData(path_id)
       .then((p) => {
-        console.log(p);
-        setUrl(p.dataurl);
+        setUrl(p["dataurl"])
         setTitle(p.title);
         setContent(p.content);
       })
