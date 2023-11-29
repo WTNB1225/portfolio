@@ -186,7 +186,7 @@ export default function Admin() {
           <div>
             <form className={`${style.form}`} onSubmit={handleDeleteSumit}>
               <label>Username</label>
-              <input type="passowrd" className={`${style.width}`} onChange={handleNameChange} />
+              <input type="password" className={`${style.width}`} onChange={handleNameChange} />
               <label>Password</label>
               <input type="password" className={`${style.width}`} onChange={handlePasswordChange} />
               <button type="submit">削除</button>
