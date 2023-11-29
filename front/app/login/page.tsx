@@ -50,7 +50,7 @@ export default function CreatePost() {
         <form className={`${styles.form}`}onSubmit={handleSubmit}>
           <label>Username</label>
           <input
-            type="text"
+            type="password"
             className={`${styles.width}`}
             onChange={handleNameChange}
           />
